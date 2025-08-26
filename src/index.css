@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+:root {
+  --font-display: "Satoshi", sans-serif;
+  --color-blue-violet: #7214ff;
+  --color-medium-orchid: #b756fe;
+  --color-summer-sky: #32cafd;
+  --color-spicy-pink: #df2db1;
+  --color-radical-red: #ff334b;
+  --color-neon-blue: #2d55fb;
+  --color-green: #41e88d;
+  --color-yellow: #ffc933;
+  --color-red: #f6285f;
+  --color-black: #060b27;
+  --color-gray-800: #0e1330;
+  --color-gray-600: #151934;
+  --color-gray-500: #282d45;
+  --color-gray-400: #47507a;
+  --color-gray-300: #8f9bb7;
+  --color-white-200: #f6f6f7;
+  --color-white: #ffffff;
+  --color-button-border: #282d45;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Extralight.woff2") format("woff2"),
+    url("../fonts/Satoshi-Extralight.woff") format("woff"),
+    url("../fonts/Satoshi-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-ExtralightItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-ExtralightItalic.woff") format("woff"),
+    url("../fonts/Satoshi-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"),
+    url("../fonts/Satoshi-Light.woff") format("woff"),
+    url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-LightItalic.woff") format("woff"),
+    url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"),
+    url("../fonts/Satoshi-Italic.woff") format("woff"),
+    url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Semibold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Semibold.woff") format("woff"),
+    url("../fonts/Satoshi-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-SemiboldItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-SemiboldItalic.woff") format("woff"),
+    url("../fonts/Satoshi-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: var(--font-display);
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-BoldItalic.woff") format("woff"),
+    url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: var(--font-display), sans-serif;
+  --color-blue-violet: var(--color-blue-violet);
+  --color-medium-orchid: var(--color-medium-orchid);
+  --color-summer-sky: var(--color-summer-sky);
+  --color-spicy-pink: var(--color-spicy-pink);
+  --color-radical-red: var(--color-radical-red);
+  --color-neon-blue: var(--color-neon-blue);
+  --color-green: var(--color-green);
+  --color-yellow: var(--color-yellow);
+  --color-red: var(--color-red);
+  --color-black: var(--color-black);
+  --color-gray-800: var(--color-gray-800);
+  --color-gray-600: var(--color-gray-600);
+  --color-gray-500: var(--color-gray-500);
+  --color-gray-400: var(--color-gray-400);
+  --color-gray-300: var(--color-gray-300);
+  --color-white-200: var(--color-white);
+  --color-white: var(--color-white);
+  --color-button-border: var(--color-button-border);
+
+  --radius-5xl: 306px;
+
+  --gradient-heading: linear-gradient(to bottom, #f6f6f7, #7e808f);
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-5xl px-6 py-3 text-white gap-0.5;
+  }
+
+  .btn-swiper {
+    @apply h-9 w-9 rounded-[8px] bg-gray-800 border border-gray-500 flex items-center justify-center;
+
+    svg,
+    img {
+      @apply w-6 h-6;
+    }
+
+    &:disabled {
+      @apply opacity-50;
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply font-display;
+  }
+
+  body {
+    @apply bg-black;
+  }
+
+  p,
+  a {
+    @apply text-gray-300;
+  }
+
+  a,
+  button {
+    @apply cursor-pointer;
+  }
+
+  section {
+    @apply py-[70px];
+  }
+
+  input {
+    @apply border border-gray-500 bg-gray-800 text-gray-400 text-[16px] py-2.5 px-7 w-full rounded-[50px];
+  }
+}
+
+@layer utilities {
+  .heading-1,
+  .heading-2,
+  .heading-3 {
+    @apply text-transparent bg-clip-text bg-[linear-gradient(to_bottom,#F6F6F7,#7E808F)] pb-1 -tracking-[3px];
+  }
+
+  .heading-1 {
+    @apply text-[32px] leading-[40px] font-bold md:text-[48px] md:leading-[56px] lg:text-[64px] lg:leading-[72px];
+  }
+
+  .heading-2 {
+    @apply text-[28px] leading-[36px] font-bold md:text-[40px] md:leading-[48px] lg:text-[56px] lg:leading-[64px];
+  }
+
+  .heading-3 {
+    @apply text-[24px] leading-[32px] font-bold md:text-[32px] md:leading-[40px] lg:text-[48px] lg:leading-[56px];
+  }
+
+  .heading-4 {
+    @apply text-[20px] leading-[28px] font-bold md:text-[28px] md:leading-[36px] lg:text-[40px] lg:leading-[48px];
+  }
+
+  .heading-5 {
+    @apply text-[18px] leading-[26px] font-bold md:text-[24px] md:leading-[32px] lg:text-[32px] lg:leading-[40px];
+  }
+
+  .heading-6 {
+    @apply text-[16px] leading-[24px] font-bold text-white md:text-[20px] md:leading-[28px] lg:text-[24px] lg:leading-[32px];
+  }
+
+  .subtitle-lg {
+    @apply text-[14px] leading-[20px] md:text-[18px] md:leading-[26px];
+  }
+
+  .subtitle-rg {
+    @apply text-[12px] leading-[18px] md:text-[16px] md:leading-[24px];
+  }
+
+  .text-md {
+    @apply text-[14px] leading-[14px] font-medium md:text-[16px] md:leading-[16px];
+  }
+
+  .text-rg {
+    @apply text-[14px] leading-[22px] md:text-[16px] md:leading-[26px];
+  }
+
+  .text-sm {
+    @apply text-[12px] leading-[18px] md:text-[14px] md:leading-[22px];
+  }
+
+  .container {
+    @apply max-w-[1224px] mx-auto px-2 xl:px-0;
+  }
+
+  .bg-button-gradient {
+    @apply bg-[linear-gradient(to_right,rgba(21,25,52,0.52)_0%,rgba(21,25,52,0.08)_48%,rgba(21,25,52,0.49)_100%)];
+  }
+
+  .line-clamp-2 {
+    @apply overflow-hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+}
