@@ -1,5 +1,5 @@
 import { LinkButton } from "@/components/ui/LinkButton";
-import type { ButtonProps, ButtonVariant } from "@/types/types";
+import type { ButtonProps } from "@/types/types";
 
 interface HeroProps {
   title: string;

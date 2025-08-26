@@ -19,7 +19,6 @@ export * from './ui/Logo';
 export * from './ui/MobileMenu';
 export * from './ui/NewProductCard';
 export * from './ui/ProductFeatureCard';
-export * from './ui/ProductNewCard';
 export * from './ui/ProductNewsList';
 export * from './ui/SocialIcons';
 export * from './ui/TestimonialCard';
