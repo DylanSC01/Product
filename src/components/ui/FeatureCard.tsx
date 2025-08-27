@@ -5,7 +5,6 @@ interface FeatureCardProps {
 }
 
 export const FeatureCard = ({ feature }: FeatureCardProps) => {
-  console.log(feature);
   return (
     <div className="rounded-lg border border-gray-500 p-6 bg-gray-800">
       <img
