@@ -119,7 +119,7 @@ export const TESTIMONIALS: Testimonial[] = [
     position: "Web Designer",
     testimonial:
       "Rorem ipsum dolor sit amet consectetur. Ac quam sem mi nibh volutpat enim pellentesque. Proin iaculis nisl et neque sed fermentum sollicitudin lectus.",
-    avatar: "/images/avatar1.webp",
+    avatar: "/images/avatar1.png",
   },
   {
     name: "Esther Howard",
