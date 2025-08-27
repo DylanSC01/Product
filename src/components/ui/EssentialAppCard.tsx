@@ -55,7 +55,7 @@ export const EssentialAppCard = ({
 
       <div className={clsx("flex items-center", variantLayout[variant])}>
         <div className={clsx(" w-full text-white", variant === "large" && "max-w-[490px]")}>
-          <h5 className="heading-5">{title}</h5>
+          <h3 className="heading-5">{title}</h3>
           <p className="text-rg mt-4">{description}</p>
 
           {link && (

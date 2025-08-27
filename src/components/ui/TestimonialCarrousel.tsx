@@ -36,10 +36,10 @@ const TestimonialCarrousel = ({ testimonials }: TestimonialCarouselProps) => {
       </Swiper>
 
       <div className="flex justify-center gap-4 mt-11">
-        <button className="swiper-btn-prev btn-swiper">
+        <button className="swiper-btn-prev btn-swiper" aria-label="Previous slide">
           <ArrowLeft className="text-white" />
         </button>
-        <button className="swiper-btn-next btn-swiper">
+        <button className="swiper-btn-next btn-swiper" aria-label="Next slide">
           <ArrowRight className="text-white" />
         </button>
       </div>

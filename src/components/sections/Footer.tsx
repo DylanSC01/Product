@@ -21,10 +21,11 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center mt-12 pt-8 border-t border-gray-500 gap-4">
-          <p className="text-gray-400 text-sm text-center md:text-left">
+          <p className="text-gray-200 text-sm text-center md:text-left">
             Copyright © Product | Designed by{" "}
-            <span className="text-white-200">Webocean LTD</span> - Powered by{" "}
-            <span className="text-white-200">Webflow</span>
+            <strong>Webocean LTD</strong> - Powered by{" "}
+            <strong>Webflow</strong> - Developed by{" "}
+            <strong>DylanSC</strong>
           </p>
 
           <SocialIcons links={SOCIAL_MEDIA_LINKS} />

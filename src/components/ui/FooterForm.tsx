@@ -2,7 +2,7 @@
 export const FooterForm = () => {
   return (
     <div className="w-full max-w-[393px] rounded-[10px] py-10 px-7 bg-gray-800 border border-gray-500">
-      <h6 className="heading-6">Subscribe to our newsletter</h6>
+      <h2 className="heading-6">Subscribe to our newsletter</h2>
       <form className="mt-5 flex flex-col gap-4">
         <input
           type="email"

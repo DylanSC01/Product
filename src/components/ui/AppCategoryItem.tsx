@@ -12,7 +12,7 @@ export const AppCategoryItem = ({ category }: AppCategoryItemProps) => {
         alt={`${category.name} icon`}
         className="h-4 lg:h-[30px] w-auto"
       />
-      <h3 className="heading-3 text-white">{category.name}</h3>
+      <p className="heading-3 text-white">{category.name}</p>
     </div>
   );
 }; 

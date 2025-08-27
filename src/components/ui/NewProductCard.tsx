@@ -13,7 +13,7 @@ export const NewProductCard = ({ product }: NewProductCardProps) => {
     <div className="w-full md:max-w-[392px] flex flex-col justify-between border border-gray-500 rounded-[10px] p-6 bg-gray-800">
       <div>
         <img src={image} alt={alt} className="rounded-[10px]"/>
-        <h6 className="heading-6 mt-5">{title}</h6>
+        <h3 className="heading-6 mt-5">{title}</h3>
         <p className="text-sm mt-4">{description}</p>
       </div>
       <div className="flex justify-between items-center mt-5 border-t border-gray-500 pt-5">
