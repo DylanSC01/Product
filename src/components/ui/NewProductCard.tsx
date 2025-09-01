@@ -10,7 +10,7 @@ export const NewProductCard = ({ product }: NewProductCardProps) => {
   const { image, alt, title, description, date, link } = product;
 
   return (
-    <div className="w-full md:max-w-[392px] flex flex-col justify-between border border-gray-500 rounded-[10px] p-6 bg-gray-800">
+    <div className="w-full md:max-w-[392px] flex flex-col h-full justify-between border border-gray-500 rounded-[10px] p-6 bg-gray-800">
       <div>
         <img src={image} alt={alt} className="rounded-[10px]"/>
         <h3 className="heading-6 mt-5">{title}</h3>
