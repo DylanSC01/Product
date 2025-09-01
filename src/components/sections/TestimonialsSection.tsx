@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import TestimonialCarrousel from "../ui/TestimonialCarrousel";
 import type { Testimonial } from "@/types/types";
+import { fadeIn, fadeInUp } from "@/animations";
 
 interface TestimonialSectionProps {
   title: string;
@@ -15,12 +17,27 @@ export const TestimonialsSection = ({
   return (
     <section>
       <div className="container relative">
-        <h2 className="heading-2 text-center">{title}</h2>
-        <p className="subtitle-rg mx-auto max-w-[636px] mt-6 text-center mb-17">
+        <motion.h2
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="heading-2 text-center"
+        >
+          {title}
+        </motion.h2>
+        <motion.p
+          initial="hidden"
+          variants={fadeInUp}
+          whileInView="visible"
+          className="subtitle-rg mx-auto max-w-[636px] mt-6 text-center mb-17"
+        >
           {description}
-        </p>
+        </motion.p>
 
-        <TestimonialCarrousel testimonials={testimonials} />
+        <motion.div variants={fadeInUp} initial="hidden" whileInView="visible">
+          <TestimonialCarrousel testimonials={testimonials} />
+        </motion.div>
       </div>
     </section>
   );

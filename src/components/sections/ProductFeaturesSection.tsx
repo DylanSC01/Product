@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
 import { LinkButton } from "@/components/ui/LinkButton";
 import { ProductFeatureCard } from "@/components/ui/ProductFeatureCard";
 
 import type { ButtonProps, ProductFeature } from "@/types/types";
+import { slideInUp } from "@/animations";
 
 interface ProductFeaturesSectionProps {
   title: string;
@@ -22,7 +24,12 @@ export const ProductFeaturesSection = ({
 }: ProductFeaturesSectionProps) => {
   return (
     <section>
-      <div className="container overflow-hidden relative">
+      <motion.div
+        variants={slideInUp}
+        initial="hidden"
+        whileInView="visible"
+        className="container overflow-hidden relative"
+      >
         <div className="absolute left-4 -top-4  blur-[200px]  w-[197px] h-[197px] bg-blue-violet"></div>
         <div className="absolute right-14 bottom-11  blur-[200px]  w-[197px] h-[197px] bg-summer-sky"></div>
         <div className="border border-gray-500 rounded-[10px] bg-gray-800 p-5 lg:px-14 lg:py-12">
@@ -50,7 +57,7 @@ export const ProductFeaturesSection = ({
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
